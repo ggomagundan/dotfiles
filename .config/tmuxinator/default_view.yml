@@ -1,7 +1,7 @@
-# /Users/kai/.config/tmuxinator/default_view.yml
+# ~/.config/tmuxinator/default_view.yml
 
-name: tripbtoz
-root: ~/Desktop/projects/tripbtoz.com
+name: default_view
+root: ~/Desktop/projects
 
 # Optional tmux socket
 # socket_name: foo
@@ -52,6 +52,9 @@ windows:
         - cat ~/Documents/character | lolcat
         - cmatrix
         - nodemon bin/www
+  - rhino:
+      panes:
+        - cat ../../rhino | lolcat
   - editor:
       layout: main-vertical
       # Synchronize all panes of this window, can be enabled before or after the pane commands run.
