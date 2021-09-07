@@ -52,16 +52,23 @@ Plugin 'vim-scripts/WhiteWash'
 Plugin 'jason0x43/vim-js-indent'
 Plugin 'jremmen/vim-ripgrep'
 Plugin 'justinmk/vim-sneak'
+Plugin 'frazrepo/vim-rainbow'
+Plugin 'embear/vim-localvimrc'
+
+" For Rust
+Plugin 'rust-lang/rust.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+" Enable vim-rainbow
+let g:rainbow_active = 1
 
 " Ale Setting Start
 " let b:ale_fixers = {'javascript': ['eslint']}
-let g:ale_fixers = {'javascript': ['prettier_standard']}
-let g:ale_linters = {'javascript': ['']}
+let g:ale_fixers = {'javascript': ['prettier_standard', 'xo'], 'rust': ['rustfmt', 'trim_whitespace', 'remove_trailing_lines'] }
+let g:ale_linters = {'javascript': ['standard', 'xo' ], 'rust': ['analyzer'] }
 
 "let g:ale_sign_error = '❌'
 "let g:ale_sign_warning = '⚠️'
@@ -71,6 +78,13 @@ let g:ale_sign_warning = '!!'
 let g:ale_fix_on_save = 1
 let g:ale_enabled = 1
 " Ale Setting  Env
+
+" Enable local Vimrc and not ask when vim start
+let g:localvimrc_enable = 1
+let g:localvimrc_ask=0
+" Value 0: Don't ask before loading a vimrc file.
+" Value 1: Ask before loading a vimrc file.
+" Default: 1
 
 " Kite Setting Start
 " let g:kite_supported_languages = ['javascript']
@@ -85,6 +99,7 @@ let g:ale_enabled = 1
 " Set Standard Lint Start
 " autocmd bufwritepost *.js silent !standard --fix % " Auto fix when save
 " autocmd bufwritepost *.js silent !standard %
+autocmd BufNewFile,BufRead *.rs set filetype=rust
 " set autoread
 " Set Standard Lint End
 
