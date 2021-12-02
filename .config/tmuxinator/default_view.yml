@@ -55,6 +55,11 @@ windows:
   - rhino:
       panes:
         - cat ../../rhino | lolcat
+        
+  - tunneling_db:
+      layout: main-vertical
+      panes:
+        - tunneling_db
   - editor:
       layout: main-vertical
       # Synchronize all panes of this window, can be enabled before or after the pane commands run.
