@@ -44,6 +44,9 @@ root: ~/Desktop/projects
 # Controls whether the tmux session should be attached to automatically. Defaults to true.
 # attach: false
 
+# Get custom layout infos 
+# tmux_command : tmux list-windows
+
 windows:
   - server:
       layout: 66d4,275x67,0,0[275x35,0,0{82x35,0,0,0,77x35,83,0,8,114x35,161,0,7},275x31,0,36,6]
