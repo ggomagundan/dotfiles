@@ -14,6 +14,7 @@
   $ brew install neofetch
   $ brew install alacritty
   $ brew install git
+  $ brew install starship
 ```
 
 # Install
