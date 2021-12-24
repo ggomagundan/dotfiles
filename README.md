@@ -29,6 +29,12 @@
   $ tmuxinator s defualt_view
 ```
 
+# Nerd Font
+```
+# Download Nerd Fonts (FiraCode) And install new Fonts
+https://www.nerdfonts.com/font-downloads
+```
+
 # ASCII Art
 ```
  Created on https://asciiart.club
