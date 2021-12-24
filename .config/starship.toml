@@ -1,0 +1,22 @@
+# ~/.config/starship.toml
+
+[battery]
+full_symbol = "🔋 "
+charging_symbol = "⚡️ "
+discharging_symbol = "💀 "
+
+[git_branch]
+symbol = " "
+
+[git_status]
+disabled=true
+
+[nodejs]
+symbol=" "
+style="bold green"
+
+[aws]
+format = 'on [$symbol($profile )(\($region\) )]($style)'
+symbol = "🄰 🅆 🅂  "
+[aws.region_aliases]
+ap-northeast-2="Seoul"
