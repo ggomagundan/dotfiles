@@ -4,6 +4,8 @@
 ```
   $ brew install cmatrix
   $ brew install lolcat
+  $ brew install fortune
+  $ brew install cowsay
   $ brew install tmux
   $ brew install tree
   $ brew install ripgrep
