@@ -1,5 +1,48 @@
 # ~/.config/starship.toml
 
+[character]
+success_symbol = "[>_](bold green)"
+
+[battery]
+full_symbol = " "
+disabled=false
+
+[[battery.display]]
+threshold=99
+charging_symbol=" "
+style = "bold bright-green"
+
+[[battery.display]]
+threshold = 90
+charging_symbol=" "
+style = "bold green"
+
+[[battery.display]]
+threshold = 80
+charging_symbol=" "
+style = "bold green"
+
+[[battery.display]]
+threshold = 60
+charging_symbol=" "
+style = "bold blue"
+
+[[battery.display]]
+threshold = 40
+charging_symbol=" "
+style = "bold purple"
+
+[[battery.display]]
+threshold = 30
+charging_symbol=" "
+style = "bold red"
+
+[[battery.display]]
+threshold = 20
+charging_symbol=" "
+style = "bold red"
+
+
 [battery]
 full_symbol = "🔋 "
 charging_symbol = "⚡️ "
