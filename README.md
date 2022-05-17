@@ -17,6 +17,7 @@
   $ brew install neofetch
   $ brew install alacritty
   $ brew install git
+  $ brew install gh
   $ brew install starship
 ```
 #  Vundle settings
