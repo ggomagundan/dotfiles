@@ -1,5 +1,6 @@
 # My Dotfiles
 
+
 #  brew list
 ```
   $ brew install cmatrix
@@ -17,6 +18,18 @@
   $ brew install alacritty
   $ brew install git
   $ brew install starship
+```
+#  Vundle settings
+```
+  $ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+  # And then on VIM `:PluginInstall`
+
+```
+
+#  Janus settings
+```
+  $ curl -L https://bit.ly/janus-bootstrap | bash
+
 ```
 
 # Install
@@ -41,4 +54,15 @@ https://www.nerdfonts.com/font-downloads
 ```
  Created on https://manytools.org/hacker-tools/convert-images-to-ascii-art/
  Created on https://asciiart.club
+```
+
+# TroubleShooting
+- E1208 `.vim/janus/vim/tools/tlib/plugin/02tlib.vim`
+``` 
+command! -nargs=0 -complete=command TBrowseScriptnames call tlib#cmd#TBrowseScriptnames()
+
+TO
+
+"  command! -nargs=0 -complete=command TBrowseScriptnames call tlib#cmd#TBrowseScriptnames()
+command! -nargs=0 TBrowseScriptnames call tlib#cmd#TBrowseScriptnames()
 ```
