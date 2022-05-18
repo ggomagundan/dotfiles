@@ -66,9 +66,17 @@ filetype plugin indent on    " required
 let g:rainbow_active = 1
 
 " Ale Setting Start
-" let b:ale_fixers = {'javascript': ['eslint']}
-let g:ale_fixers = {'javascript': ['prettier_standard', 'xo'], 'rust': ['rustfmt', 'trim_whitespace', 'remove_trailing_lines'] }
-let g:ale_linters = {'javascript': ['standard', 'xo' ], 'rust': ['analyzer'] }
+let g:ale_fixers = {
+       \ '*': ['remove_trailing_lines', 'trim_whitespace'],
+       \ 'javascript': ['prettier', 'xo', 'eslint'],
+       \ 'rust': ['rustfmt'],
+       \ 'python': ['black']
+\ }
+let g:ale_linters = {
+       \ 'javascript': ['eslint', 'xo' ],
+       \ 'rust': ['rustc', 'analyzer'],
+       \ 'python': ['pylint']
+\ }
 
 "let g:ale_sign_error = '❌'
 "let g:ale_sign_warning = '⚠️'
