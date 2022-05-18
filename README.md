@@ -19,11 +19,21 @@
   $ brew install git
   $ brew install gh
   $ brew install starship
+  $ brew install ag
+  $ brew install cmake
+  $ brew install mono go nodejs
 ```
 #  Vundle settings
 ```
   $ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
   # And then on VIM `:PluginInstall`
+
+```
+
+#  YCM settings
+```
+  $ cd ~/.vim/bundle/YouCompleteMe
+  $ python3 install.py --all
 
 ```
 
