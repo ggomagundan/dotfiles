@@ -18,29 +18,18 @@ Plugin 'VundleVim/Vundle.vim'
 " Plugin 'L9'
 " Git plugin not hosted on GitHub
 Plugin 'git://git.wincent.com/command-t.git'
-" git repos on your local machine (i.e. when working on your own plugin)
-" Plugin 'file:///home/gmarik/path/to/plugin'
-" The sparkup vim script is in a subdirectory of this repo called vim.
-" Pass the path to set the runtimepath properly.
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Install L9 and avoid a Naming conflict if you've already installed a
 " different version somewhere else.
 " Plugin 'ascenator/L9', {'name': 'newL9'}
 
-" From Armin
-Plugin 'vim-airline/vim-airline'
-Plugin 'isRuslan/vim-es6'
-Plugin 'pangloss/vim-javascript'
-Plugin 'mxw/vim-jsx'
-Plugin 'flowtype/vim-flow'
-Plugin 'dart-lang/dart-vim-plugin'
-Plugin 'reasonml-editor/vim-reason'
 
 " For Me
 "Plugin 'scrooloose/nerdtree'
 "Plugin 'mileszs/ack.vim'
 "Plugin 'kien/ctrlp.vim'
 "Plugin 'airblade/vim-gitgutter'
+Plugin 'vim-airline/vim-airline'
 Plugin 'dense-analysis/ale'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'ludovicchabant/vim-gutentags'
@@ -49,13 +38,23 @@ Plugin 'flrnprz/candid.vim'
 Plugin 'gmoe/vim-espresso'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-scripts/WhiteWash'
-Plugin 'jason0x43/vim-js-indent'
 Plugin 'jremmen/vim-ripgrep'
 Plugin 'justinmk/vim-sneak'
 Plugin 'frazrepo/vim-rainbow'
 Plugin 'embear/vim-localvimrc'
 
-" For Rust
+
+"-------------------=== Javascript  ===-----------------------------
+Plugin 'mxw/vim-jsx'
+Plugin 'isRuslan/vim-es6' 
+Plugin 'flowtype/vim-flow'
+Plugin 'jason0x43/vim-js-indent'
+Plugin 'pangloss/vim-javascript'
+
+"-------------------=== Python  ===-----------------------------
+Plugin 'klen/python-mode'                   " Python mode (docs, refactor, lints...)
+
+"-------------------=== Rust   ===-----------------------------
 Plugin 'rust-lang/rust.vim'
 
 " All of your Plugins must be added before the following line
