@@ -67,6 +67,13 @@ https://www.nerdfonts.com/font-downloads
  Created on https://asciiart.club
 ```
 
+# Window Management
+```
+
+https://github.com/peterklijn/hammerspoon-shiftit
+
+```
+ 
 # TroubleShooting
 - E1208 `.vim/janus/vim/tools/tlib/plugin/02tlib.vim`
 ``` 
