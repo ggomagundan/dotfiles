@@ -349,10 +349,6 @@ set -g mode-keys vi
 # set -g prefix C-a
 # bind C-a send-prefix
 
-# -- Move Window -----------------------------------------------------------------------
-bind-key -n C-[ select-window -t -1
-bind-key -n C-] select-window -t +1
-
 # move status line to top
 set-option -g status-position top
 
