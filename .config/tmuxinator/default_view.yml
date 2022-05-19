@@ -46,10 +46,11 @@ root: ~/Desktop/projects
 
 windows:
   - server:
-      layout: 66d4,275x67,0,0[275x35,0,0{82x35,0,0,0,77x35,83,0,8,114x35,161,0,7},275x31,0,36,6]
+      #  layout: 66d4,275x67,0,0[275x35,0,0{82x35,0,0,0,77x35,83,0,8,114x35,161,0,7},275x31,0,36,6]
+      layout: f5dd,205x79,0,0[205x48,0,0{58x48,0,0,0,84x48,59,0,4,61x48,144,0,5},205x30,0,49,6] 
       panes:
         - neofetch
-        - cat ~/Documents/character | lolcat
+        - fortune | cowsay -f ~/Documents/rhino.cow  | lolcat
         - cmatrix
         - nodemon bin/www
   - rhino:
