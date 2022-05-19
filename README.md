@@ -84,3 +84,11 @@ TO
 "  command! -nargs=0 -complete=command TBrowseScriptnames call tlib#cmd#TBrowseScriptnames()
 command! -nargs=0 TBrowseScriptnames call tlib#cmd#TBrowseScriptnames()
 ```
+
+# Note
+```
+// Get Tmux layout
+$ tmux list-windows
+
+
+```
