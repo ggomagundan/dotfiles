@@ -8,3 +8,4 @@ alias jtags="ctags -R --exclude=node_modules --exclude=sql --exclude=build --exc
 export PATH="$PATH:$HOME/.rvm/bin"
 export PKG_CONFIG_ALLOW_CROSS=1
 export EDITOR='vim'
+eval "$(starship init zsh)"
