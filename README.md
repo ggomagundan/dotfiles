@@ -8,12 +8,13 @@
   $ brew install fortune
   $ brew install cowsay
   $ brew install tmux
+  $ brew install tmuxinator
   $ brew install tree
   $ brew install ripgrep
   $ brew install awscli
   $ brew install macvim
   $ brew install ruby
-  $ brew install ctag
+  $ brew install ctags
   $ brew install neofetch
   $ brew install alacritty
   $ brew install git
