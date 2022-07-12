@@ -7,7 +7,7 @@
 local obj = {}
 obj.__index = obj
 
--- Metadata
+-- Metadata 
 obj.name = "HammerspoonShiftIt"
 obj.version = "1.0"
 obj.author = "Peter Klijn"
@@ -178,7 +178,13 @@ function obj:bindHotkeys(mapping)
   hs.hotkey.bind(self.mapping.previousScreen[1], self.mapping.previousScreen[2], function() self:previousScreen() end)
   hs.hotkey.bind(self.mapping.resizeOut[1], self.mapping.resizeOut[2], function() self:resizeOut() end)
   hs.hotkey.bind(self.mapping.resizeIn[1], self.mapping.resizeIn[2], function() self:resizeIn() end)
-
+  
+  -- Remap Tilde key and GraveAccent key
+  TildeHotkey = hs.hotkey.new('rigthshift', 'escape', function() hs.eventtap.keyStrokes('~') end)
+  GraveAccentHotkey = hs.hotkey.new(nil, 'home', function() hs.eventtap.keyStrokes('`') end)
+  TildeHotkey:enable()
+  GraveAccentHotkey:enable()
+  
   return self
 end
 
