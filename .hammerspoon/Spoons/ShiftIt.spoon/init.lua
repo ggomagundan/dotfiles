@@ -179,6 +179,7 @@ function obj:bindHotkeys(mapping)
   hs.hotkey.bind(self.mapping.resizeOut[1], self.mapping.resizeOut[2], function() self:resizeOut() end)
   hs.hotkey.bind(self.mapping.resizeIn[1], self.mapping.resizeIn[2], function() self:resizeIn() end)
   
+  -- Referer : https://github.com/elliotwaite/hammerspoon-config
   -- Remap Tilde key and GraveAccent key
   TildeHotkey = hs.hotkey.new('rigthshift', 'escape', function() hs.eventtap.keyStrokes('~') end)
   GraveAccentHotkey = hs.hotkey.new(nil, 'home', function() hs.eventtap.keyStrokes('`') end)
