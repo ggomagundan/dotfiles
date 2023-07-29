@@ -16,7 +16,7 @@
   $ brew install ruby
   $ brew install ctags
   $ brew install neofetch
-  $ brew install alacritty
+  $ brew install wezterm
   $ brew install git
   $ brew install gh
   $ brew install starship
@@ -24,6 +24,12 @@
   $ brew install cmake
   $ brew install mono go nodejs
 ```
+
+#  cargo list
+```
+  $ cargo install rsclock
+```
+
 #  Vundle settings
 ```
   $ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
