@@ -1,5 +1,14 @@
 # My Dotfiles
 
+#  install rust (cargo)
+```
+  $ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+
+#  install Spacevim
+```
+  $ curl -sLf https://spacevim.org/install.sh | bash
+```
 
 #  brew list
 ```
@@ -7,21 +16,20 @@
   $ brew install lolcat
   $ brew install fortune
   $ brew install cowsay
-  $ brew install tmux
-  $ brew install tmuxinator
   $ brew install tree
   $ brew install ripgrep
   $ brew install awscli
   $ brew install macvim
-  $ brew install ruby
+  $ brew install ruff
+  $ brew install bottom
   $ brew install ctags
-  $ brew install neofetch
+  $ brew install fastfetch
   $ brew install wezterm
   $ brew install git
   $ brew install gh
   $ brew install starship
-  $ brew install ag
   $ brew install cmake
+  $ brew install volta
   $ brew install mono go nodejs
 ```
 
