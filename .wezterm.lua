@@ -11,32 +11,35 @@ local config = {}
 if wezterm.config_builder then
   config = wezterm.config_builder()
 end
+wezterm.log_error('Version ' .. wezterm.version)
 
 wezterm.on('gui-startup', function(cmd)
-  local tab, neo_pane, window = mux.spawn_window(cmd or {})
+  local tab, fastfetch_pane, window = mux.spawn_window(cmd or {})
   local code_tab, code_pane, code_window = window:spawn_tab(cmd or {})
 
   window:gui_window():maximize()
   -- Create a split occupying the right 1/3 of the screen
-  local ssh_pane = neo_pane:split { size = 0.5,  direction='Bottom' }
+  local ssh_pane = fastfetch_pane:split { size = 0.5,  direction='Bottom' }
   local btm_pane = ssh_pane:split { size = 0.5 }
 
-  local cow_pane = neo_pane:split { size =  0.8 }
+  local cow_pane = fastfetch_pane:split { size =  0.8 }
   -- Create another split in the right of the remaining 2/3
   -- of the space; the resultant split is in the middle
   -- 1/3 of the display and has the focus.
   local matrix_pane = cow_pane:split { size = 0.55 }
-  local clock_pane = neo_pane:split {size = 0.3, direction='Bottom'}
+  local clock_pane = fastfetch_pane:split {size = 0.3, direction='Bottom'}
 
   window:gui_window():maximize()
 
-  ssh_pane:send_text 'echo ssh\n'
+  ssh_pane:send_text 'wezterm cli set-tab-title dashboard;echo dashboard\n'
   btm_pane:send_text 'btm\n'
 
-  neo_pane:send_text 'neofetch\n'
+  fastfetch_pane:send_text 'fastfetch\n'
   clock_pane:send_text 'rsclock -c -S -U -s ▦  -b 0  -f 34\n'
   cow_pane:send_text 'fortune | cowsay -f ~/Documents/rhino.cow  | lolcat\n'
   matrix_pane:send_text 'cmatrix\n'
+
+  code_pane:send_text 'cd ~/Desktop/projects\n'
 
 end)
 
@@ -90,6 +93,8 @@ config.keys = {
       act.SendKey { key = 'L', mods = 'CTRL' },
     },
   },
+   { key = '{', mods = 'SHIFT|ALT', action = act.MoveTabRelative(-1) },
+  { key = '}', mods = 'SHIFT|ALT', action = act.MoveTabRelative(1) },
 
 
 }
