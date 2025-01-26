@@ -29,6 +29,7 @@
   $ brew install gh
   $ brew install starship
   $ brew install cmake
+  $ brew install ag
   $ brew install volta
   $ brew install mono go nodejs
 ```

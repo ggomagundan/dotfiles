@@ -5,6 +5,8 @@ success_symbol = "[>_](bold green)"
 
 [battery]
 full_symbol = " "
+charging_symbol = "⚡️ "
+discharging_symbol = "💀 "
 disabled=false
 
 [[battery.display]]
@@ -42,11 +44,6 @@ threshold = 20
 charging_symbol=" "
 style = "bold red"
 
-
-[battery]
-full_symbol = "🔋 "
-charging_symbol = "⚡️ "
-discharging_symbol = "💀 "
 
 [git_branch]
 symbol = " "
